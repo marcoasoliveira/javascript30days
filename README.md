@@ -17,3 +17,11 @@ Cada atividade estará em uma pasta separada dentro deste repositório devidamen
 - Os valor utilizados nos `data-key` de cada div são os valores correspondentes aos [key codes](http://keycode.info/) de cada tecla. Esses valores são universais e independem de plataforma.
 
 - Utilizamos *key events* para disparar eventos e alterar as classes das divs.
+
+## Dia 2 - CSS + JS Clock
+
+- construção de relógio utilizando `new Date()` para receber a hora atual e através disso, atualizar o atributo de rotação dos ponteiros.
+
+- coloquei um mostrador a mais em baixo, com a hora "digital".
+
+- `transition-time-function: cubic-belzier()` faz a animação de "tremida" do ponteiro quando realiza o movimento.
