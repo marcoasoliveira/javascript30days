@@ -25,3 +25,15 @@ Cada atividade estará em uma pasta separada dentro deste repositório devidamen
 - coloquei um mostrador a mais em baixo, com a hora "digital".
 
 - `transition-time-function: cubic-belzier()` faz a animação de "tremida" do ponteiro quando realiza o movimento.
+
+## Dia 3 - Variáveis CSS + JS 
+
+- são estabelecidas as variáveis dentro da tag `:root` no CSS.
+
+- convenciona-se que a escrita de uma variável segue o exemplo: `--nomeDaVariável`
+
+- para definir o valor de uma propriedade como sendo o valor de uma variável, utiliza-se `var(variável)`, como por exemplo:  *padding: var(--spacing)*
+
+- a propriedade `dataset` captura os valores utilizados no atributo `data-` do html, como no exemplo utilizamos *data-sizing*, no javascript capturamos como `dataset.sizing`.
+
+- `.style.setProperty` altera o valor de um atributo no css.
