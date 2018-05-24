@@ -37,3 +37,29 @@ Cada atividade estará em uma pasta separada dentro deste repositório devidamen
 - a propriedade `dataset` captura os valores utilizados no atributo `data-` do html, como no exemplo utilizamos *data-sizing*, no javascript capturamos como `dataset.sizing`.
 
 - `.style.setProperty` altera o valor de um atributo no css.
+
+## Dia 4 - arrayCardio - day 1
+
+- Neste arquivo foram utilizados os métodos de array `.filter(), .map(), .reduce(), .sort()` e a combinação entre eles para gerar um novo array de acordo com o pedido em cada item.
+
+- _Filter()_: recebe uma função que deve devolver `true` caso uma condição seja atendida.
+
+`array.filter( linha => linha.item >= 10 && linha.item < 20)` *retornará todos os itens entre 10 e 19*
+
+- _Map()_: recebe uma função que devolve um array com o mesmo tamanho do original mas com os itens solicitados
+
+`array.map( linha => linha.a + ' ' + linha.b)` *retornará um array contendo a concat "a b" de cada index*
+
+- _Sort()_: recebe uma função que faz a comparação a-b e devolve um array ordenado
+
+`array.sort( (a,b) => a.item > b.item? 1 : -1)` *retornará um array ordenado do maior para o menor*
+
+- _Reduce()_: recebe duas variáveis, uma representando o total e outra o array, e devolve o total conforme o solicitado. O valor inicial de *total* deve ser passado após a função como segundo parâmetro do reduce.
+
+`array.reduce( (total, linha) => {`
+    `return total + (linha.itemB - linha.itemA) `
+`},0)`
+
+- os métodos podem ser combinados.
+
+- trabalhando com separação de strings, podemos utilizar `.split()` que recebe como atributo o caracter que será a _flag_ de separação. `nomeCompleto.split(', ')` irá separar a string presente na variável em várias partes sempre que houver uma (,) acompanhada de espaço.
