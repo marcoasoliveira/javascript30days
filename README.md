@@ -42,19 +42,19 @@ Cada atividade estará em uma pasta separada dentro deste repositório devidamen
 
 - Neste arquivo foram utilizados os métodos de array `.filter(), .map(), .reduce(), .sort()` e a combinação entre eles para gerar um novo array de acordo com o pedido em cada item.
 
-- _Filter()_: recebe uma função que deve devolver `true` caso uma condição seja atendida.
+- __Filter()__: recebe uma função que deve devolver `true` caso uma condição seja atendida.
 
 `array.filter( linha => linha.item >= 10 && linha.item < 20)` *retornará todos os itens entre 10 e 19*
 
-- _Map()_: recebe uma função que devolve um array com o mesmo tamanho do original mas com os itens solicitados
+- __Map()__: recebe uma função que devolve um array com o mesmo tamanho do original mas com os itens solicitados
 
 `array.map( linha => linha.a + ' ' + linha.b)` *retornará um array contendo a concat "a b" de cada index*
 
-- _Sort()_: recebe uma função que faz a comparação a-b e devolve um array ordenado
+- __Sort()__: recebe uma função que faz a comparação a-b e devolve um array ordenado
 
 `array.sort( (a,b) => a.item > b.item? 1 : -1)` *retornará um array ordenado do maior para o menor*
 
-- _Reduce()_: recebe duas variáveis, uma representando o total e outra o array, e devolve o total conforme o solicitado. O valor inicial de *total* deve ser passado após a função como segundo parâmetro do reduce.
+- __Reduce()__: recebe duas variáveis, uma representando o total e outra o array, e devolve o total conforme o solicitado. O valor inicial de *total* deve ser passado após a função como segundo parâmetro do reduce.
 
 `array.reduce( (total, linha) => {`
     `return total + (linha.itemB - linha.itemA) `
@@ -62,7 +62,7 @@ Cada atividade estará em uma pasta separada dentro deste repositório devidamen
 
 - os métodos podem ser combinados.
 
-- trabalhando com separação de strings, podemos utilizar `.split()` que recebe como atributo o caracter que será a _flag_ de separação. `nomeCompleto.split(', ')` irá separar a string presente na variável em várias partes sempre que houver uma (,) acompanhada de espaço.
+- trabalhando com separação de strings, podemos utilizar `.split()` que recebe como atributo o caracter que será a __flag__ de separação. `nomeCompleto.split(', ')` irá separar a string presente na variável em várias partes sempre que houver uma (,) acompanhada de espaço.
 
 ## Dia 5 - Flex Panel Galery
 
@@ -78,7 +78,7 @@ Cada atividade estará em uma pasta separada dentro deste repositório devidamen
 
 ## Dia 6 - Ajax type Ahead
 
-- Realizar o `fetch()` em uma fonte de dados retorna uma _Promise_.
+- Realizar o `fetch()` em uma fonte de dados retorna uma __Promise__.
 
 - A estrutura do fetch segue a ordem:
 
@@ -86,7 +86,7 @@ Cada atividade estará em uma pasta separada dentro deste repositório devidamen
     `.then()` <--- função a ser executada caso a promisse retorne OK
     `.catch()` <--- função a ser executada caso algum erro aconteça
 
-- Realizar o `.push` de um array para dentro de outro array, coloca todos os valores dentro de um único index do array que recebe o push. [{1,2,3,4...}, 1, 2, 3...]. para evitar que isso aconteça, utilizamos o _spread_ dentro do push. `arrayA.push(...arrayB)`.
+- Realizar o `.push` de um array para dentro de outro array, coloca todos os valores dentro de um único index do array que recebe o push. [{1,2,3,4...}, 1, 2, 3...]. para evitar que isso aconteça, utilizamos o __spread__ dentro do push. `arrayA.push(...arrayB)`.
 
 - `.match()` procura uma string correspondente ao atributo passado (com expressão regular) em um array ou string. 
 
@@ -96,12 +96,19 @@ Cada atividade estará em uma pasta separada dentro deste repositório devidamen
 
 ## Dia 7 - Array Cardio - day 2
 
-- `.some()` realiza um teste no array e verifica se _ALGUM_ dos itens atende a uma condição.
+- `.some()` realiza um teste no array e verifica se __ALGUM__ dos itens atende a uma condição.
 
-- `.every()` realiza um teste no array e verifica se _TODOS_ os itens atendem a uma condição
+- `.every()` realiza um teste no array e verifica se __TODOS__ os itens atendem a uma condição
 
-- `.find()` realiza um teste no array e retorna o _primeiro valor_ que atenda a uma condição
+- `.find()` realiza um teste no array e retorna o __primeiro valor__ que atenda a uma condição
 
-- `.findIndex()` semelhante ao método `.find()` mas retorna a _posição_ no array, do primeiro item que atende a condição.
+- `.findIndex()` semelhante ao método `.find()` mas retorna a __posição__ no array, do primeiro item que atende a condição.
 
-- `.slice(x, y)` retorna uma cópia do array com os _elementos entre os indices x_ e _y_.
+- `.slice(x, y)` retorna uma cópia do array com os __elementos entre os indices x__ e __y__.
+
+## Dia 8 - Fun with HTML5 Canvas
+
+- Canvas é semelhante ao __paint__ do windows, mas o desenho não é feito no __elemento canvas__ no HTML, mas no contexto dele, que pode ser __2d ou 3d__. `canvas.getContext('2d')` por exemplo.
+
+- __Guia para contexto do canvas:__ [MDN Canvas 2D](https://developer.mozilla.org/pt-BR/docs/Web/API/CanvasRenderingContext2D)
+
