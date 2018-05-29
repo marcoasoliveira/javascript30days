@@ -112,3 +112,20 @@ Cada atividade estará em uma pasta separada dentro deste repositório devidamen
 
 - __Guia para contexto do canvas:__ [MDN Canvas 2D](https://developer.mozilla.org/pt-BR/docs/Web/API/CanvasRenderingContext2D)
 
+## Dia 9 - 14 Must Know Dev Tools Tricks
+
+- No __Google Chrome__, para saber os atributos que o `JS` está modificando, abra a *ferramenta de desenvolvimento* ou clique na opção de *inspecionar elemento*, e no elemento que sofre a alteração, abra as opções (click oposto) e depois: `break on\ attribute modifications`. Quando a função JS dispara, ela é pausada pelo navegador e uma nova aba é aberta na inspeção, exibindo a função responsável.
+
+- É possível realizar alteração de estilo também no console. Exemplo:
+
+    + expressão regular: `console.log('Hello!')`
+    + texto interpolado: `console.log('Hello Im a %s string','💩')` <-- %s é trocado pelo 💩 no console
+    + estilizado: `console.log('%c Hello','font-size: 50px; background: red')` <-- o %c atribui ao texto o estilo passado.
+
+- Podemos também utilizar outros displays no console, como __console.warn()__, __console.error()__, __console.info()__, __console.assert()__, 
+
+- Podemos também agrupar mensagens no console, utilizando `console.group('${variávelX}')` para abrir o grupo e `console.groupEnd('${variávelX}')`.
+
+- Além disso, temos `console.count('texto')`, para contar quantas vezes esse texto foi exibido no console e `console.time('texto')` para contar quanto tempo levou entre a chamada e o encerramento `console.timeEnd('texto')`.
+
+- Use `console.table()` para exibir arrays no console de maneira organizada em tabela.
