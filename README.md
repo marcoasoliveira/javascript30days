@@ -92,4 +92,16 @@ Cada atividade estará em uma pasta separada dentro deste repositório devidamen
 
 - Utilizando `keyup` em `.addEventListener`, o evento será disparado a cada tecla pressionada.
 
-- `.join()` transforma um array com itens multiplos em uma única string
+- `.join()` transforma um array com itens multiplos em uma única string.
+
+## Dia 7 - Array Cardio - day 2
+
+- `.some()` realiza um teste no array e verifica se _ALGUM_ dos itens atende a uma condição.
+
+- `.every()` realiza um teste no array e verifica se _TODOS_ os itens atendem a uma condição
+
+- `.find()` realiza um teste no array e retorna o _primeiro valor_ que atenda a uma condição
+
+- `.findIndex()` semelhante ao método `.find()` mas retorna a _posição_ no array, do primeiro item que atende a condição.
+
+- `.slice(x, y)` retorna uma cópia do array com os _elementos entre os indices x_ e _y_.
