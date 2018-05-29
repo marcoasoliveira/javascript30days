@@ -63,3 +63,33 @@ Cada atividade estará em uma pasta separada dentro deste repositório devidamen
 - os métodos podem ser combinados.
 
 - trabalhando com separação de strings, podemos utilizar `.split()` que recebe como atributo o caracter que será a _flag_ de separação. `nomeCompleto.split(', ')` irá separar a string presente na variável em várias partes sempre que houver uma (,) acompanhada de espaço.
+
+## Dia 5 - Flex Panel Galery
+
+- Inicialmente as divs estavam dispostas uma a baixo da outra, mas utilizando `display: flex` elas passam a ficar lado a lado. [flexbox](https://flexbox.io/)
+
+- Utilizando `flex:1` nas propriedades de `panel`, os paineis ficam igualmente distribuidos na tela sempre que houver um espaço extra.
+
+- Quando um dos paineis tiver `flex:5`, esse ocupará 5x mais espaço que os demais (do espaço disponível)
+
+- Utilizando `.panel > *:first-child` e `.panel > *:last-child` definimos as propriedades para o primeiro e ultimo elementos dentro de panel.
+
+- `.classList.toggle()` adiciona a classe recebida como parâmetro caso o elemento não a tenha e remove caso ela já exista.
+
+## Dia 6 - Ajax type Ahead
+
+- Realizar o `fetch()` em uma fonte de dados retorna uma _Promise_.
+
+- A estrutura do fetch segue a ordem:
+
+`fetch(origemDados)`
+    `.then()` <--- função a ser executada caso a promisse retorne OK
+    `.catch()` <--- função a ser executada caso algum erro aconteça
+
+- Realizar o `.push` de um array para dentro de outro array, coloca todos os valores dentro de um único index do array que recebe o push. [{1,2,3,4...}, 1, 2, 3...]. para evitar que isso aconteça, utilizamos o _spread_ dentro do push. `arrayA.push(...arrayB)`.
+
+- `.match()` procura uma string correspondente ao atributo passado (com expressão regular) em um array ou string. 
+
+- Utilizando `keyup` em `.addEventListener`, o evento será disparado a cada tecla pressionada.
+
+- `.join()` transforma um array com itens multiplos em uma única string
