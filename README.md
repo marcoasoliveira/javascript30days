@@ -154,4 +154,13 @@ Cada atividade estará em uma pasta separada dentro deste repositório devidamen
 
 - A função `scrub()` redefine o tempo de vídeo atual através do evento disparado pela barra de progresso. O calculo é feito levando em consideração a __posição do click no EIXO X__ (`e.offsetX`), a __largura da barra de progresso__ (progress.offsetWidth) e a __duração do vídeo__ (`video.duration`).
 
- 
+## Dia 12 - Key Sequence Detection (KONAMI CODE)
+
+- Detecção de uma sequência de teclas pressionadas na tela para a realização de uma função (normalmente um easter egg).
+
+- Tem esse nome em referência aos __cheat codes__ utilizados pela Konami, como por exemplo o famoso *Juiz Cachorro*.
+
+- Utilizamos o método `.splice` para limitar o tamanho do array para que tivesse o mesmo tamanho que a palavra escolhida como *secretCode*. O sinal de menos na frente do `secreteCode.lenght` informa que a remoção dos itens adicionais deve ser feita na ordem (__primeiro que entra, primeiro que sai__) e tiramos 1 do valor do lenght pois a quantidade de indices de um array começa em zero, terminando um número a menos que a quantidade de itens. O segundo parametro informa a quantidade de itens a serem removidos.
+
+- Para validar o código, realizamos um `join` e verificamos `include` se dentro da string formada, consta a palavra chave.
+
