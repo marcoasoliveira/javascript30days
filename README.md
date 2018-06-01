@@ -137,3 +137,21 @@ Cada atividade estará em uma pasta separada dentro deste repositório devidamen
 - `.checked` é um atributo que retorna true ou false na verificação de estado checkbox no JS, mas também pode receber uma atribuição de valor (true ou false).
 
 - `.shiftKey` foi utilizado para verificar o estado da tecla shift.
+
+## Dia 11 - Custom HTML5 Video Player
+
+- O elemento video pode ter seu estado validado pelo atributo `.paused`, que retorna true ou false e podemos executar o __play__ ou __pause__ do vídeo com os métodos `play() e pause()`.
+
+- Podemos também trabalhar com o tempo de vídeo já percorrido e avançar ou retroceder através do atributo `.currentTime`.
+
+- Utilizamos no elemento __button__ o atributo `data-skip`. O atributo data recebe um valor que será passado quando solicitado. *Skip* foi o nome dado ao tipo de dado.
+
+- `.currentTime` trabalha com valores do tipo __float__, sendo assim foi necessário realizar o "parse" dos dados recebidos de `data-skip`.
+
+- Podemos acessar as propriedades do video utilizando `video[propriedade]`, como por exemplo (`video[this.name]`) que acessará a propriedade de nome igual ao do elemento que disparou a função.
+
+- O evento `timeupdate` é disparado conforme o progresso do vídeo, assim atualiza o atributo `flexbasis` da progressBar.
+
+- A função `scrub()` redefine o tempo de vídeo atual através do evento disparado pela barra de progresso. O calculo é feito levando em consideração a __posição do click no EIXO X__ (`e.offsetX`), a __largura da barra de progresso__ (progress.offsetWidth) e a __duração do vídeo__ (`video.duration`).
+
+ 
