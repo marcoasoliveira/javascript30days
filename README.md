@@ -129,3 +129,11 @@ Cada atividade estará em uma pasta separada dentro deste repositório devidamen
 - Além disso, temos `console.count('texto')`, para contar quantas vezes esse texto foi exibido no console e `console.time('texto')` para contar quanto tempo levou entre a chamada e o encerramento `console.timeEnd('texto')`.
 
 - Use `console.table()` para exibir arrays no console de maneira organizada em tabela.
+
+## Dia 10 - Hold Shift to Check Multiple Checkboxes
+
+- Código que verifica se a tecla shift está pressionada para fazer a marcação de multiplos checkboxes.
+
+- `.checked` é um atributo que retorna true ou false na verificação de estado checkbox no JS, mas também pode receber uma atribuição de valor (true ou false).
+
+- `.shiftKey` foi utilizado para verificar o estado da tecla shift.
