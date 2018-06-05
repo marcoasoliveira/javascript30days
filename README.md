@@ -170,4 +170,27 @@ Cada atividade estará em uma pasta separada dentro deste repositório devidamen
 
 - Na função `checkSlide` são realizadas as verificações dos pontos de base e meio das imagens em relação ao scroll da tela. Através desta verificação a classe `active` é adicionada ou removida.
 
+## Dia 14 - Object and Arrays - Reference VS Copy
+
+- Quando atribuimos que a variável `age2` recebe o valor de `age`, ela recebe uma "cópia" do valor de `age` naquele instante, assim, quando mudamos o valor de `age` no momento seguinte, essa mudança não afeta `age2` que continua exibindo o primeiro valor.
+
+- Quando atribuimos que `team` receberá o valor do __array__ `players`, estamos fazendo uma __REFERÊNCIA DIRETA__ ao array original, assim, quando alteramos o valor presente em `team[3]`, a alteração será refletida no array original também.
+
+- Podemos copiar o array utilizando `.slice()`, assim qualquer alteração realizada não será refletida no array original.
+
+- Outras soluções para a cópia do array, seriam a utilização do `spread` ou atribuir um array vazio contatenado com o array players, ou ainda, utilizando `Array.from()`.
+
+- _O mesmo tipo de problema ocorre com objetos_.
+
+- Quando atribuímos um objeto à uma variável, estamos fazendo uma referência.
+
+- Para fazer uma cópia de um objeto, podemos utilizar `Object.assign()`.
+
+- __A cópia de um objeto só é realizada em primeiro nível__. Objetos que possuem outros objetos internamente, só são copiados na primeira camada. Os objetos internos ainda permanecem como referências ao objeto original.
+
+- Uma alternativa para esse tipo de caso seria a utilização do esquema abaixo:
+
+`const dev2 = JSON.parse(JSON.stringify(wes))`
+
+- Assim, temos uma cópia *string* do objeto e realizamos o parse dessa string JSON. Desse jeito temos uma cópia do objeto e dos objetos internos.
 
