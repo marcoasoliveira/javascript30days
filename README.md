@@ -164,3 +164,10 @@ Cada atividade estará em uma pasta separada dentro deste repositório devidamen
 
 - Para validar o código, realizamos um `join` e verificamos `include` se dentro da string formada, consta a palavra chave.
 
+## Dia 13 - Slide in on scroll
+
+- A função `debounce` recebe uma função como parâmetro e determina a frequência com a qual esta será executada impondo um tempo de espera.
+
+- Na função `checkSlide` são realizadas as verificações dos pontos de base e meio das imagens em relação ao scroll da tela. Através desta verificação a classe `active` é adicionada ou removida.
+
+
