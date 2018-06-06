@@ -194,3 +194,14 @@ Cada atividade estará em uma pasta separada dentro deste repositório devidamen
 
 - Assim, temos uma cópia *string* do objeto e realizamos o parse dessa string JSON. Desse jeito temos uma cópia do objeto e dos objetos internos.
 
+## Dia 15 - LocalStorage and Event Delegation
+
+- LocalStorage não interpreta os objetos da forma como o javascript trabalha, então precisamos converter em string utilizando `JSON.stringify`.
+
+- `this.querySelector` aplica a seleção no contexto do elemento que disparou o evento.
+
+- `.matches()` retorna true ou false se um critério for encontrado.
+
+- Aplicar um EventListener a elementos que podem aparecer depois que a DOM for carregada, como por exemplo novos campos de input, fará com que esses campos não sejam capturados pelo listener.
+
+- A solução é tratar o evento conforme presente na função `toggleDone`
