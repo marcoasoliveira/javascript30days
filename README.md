@@ -205,3 +205,26 @@ Cada atividade estará em uma pasta separada dentro deste repositório devidamen
 - Aplicar um EventListener a elementos que podem aparecer depois que a DOM for carregada, como por exemplo novos campos de input, fará com que esses campos não sejam capturados pelo listener.
 
 - A solução é tratar o evento conforme presente na função `toggleDone`
+
+## Dia 16 - CSS Text Shadow Mouse Move Effect
+
+- A função `shadow()` é disparada ao mover do mouse, e captura a posição do mouse na tela no eixo X,Y.
+
+- A função possui uma condição de que só serão atribuidos os valores dessa posição se o `e.target` for diferente de `this` (que nesse caso é a div hero).
+
+- A atribuição dentro da condição foi realizada utilizando __desestruturação__ [link MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/Atribuicao_via_desestruturacao).
+
+Nesse caso, temos:
+
+`const { offsetWidth: width, offsetHeight: height } = hero` substituindo:
+
+`const width = hero.offsetWidth`
+`const height = hero.offsetHeight`
+
+Ou seja, as variáveis *width* e *height* foram declaradas e já recebem o valor dos offset's de hero, diretamente.
+
+O mesmo foi utilizado na declaração das variáveis *x* e *y* que receberam os offset's de `e.target`.
+
+- Para definir a posição da sombra, foram declaradas as variáveis `xWalk` e `yWalk` que recebem o valor do calculo da posição.
+
+- __CSS__: Podem ser atribuidas mais de uma sombra a um elemento.  
