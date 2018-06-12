@@ -228,3 +228,15 @@ O mesmo foi utilizado na declaração das variáveis *x* e *y* que receberam os 
 - Para definir a posição da sombra, foram declaradas as variáveis `xWalk` e `yWalk` que recebem o valor do calculo da posição.
 
 - __CSS__: Podem ser atribuidas mais de uma sombra a um elemento.  
+
+## Dia 17 - Sorting Band Names without articles
+
+- A função `strip()` utiliza __regex__ para remover os artigos *A, The, An*, para que eles não influenciem na ordenação.
+
+- Na expressão regex, deve ser colocado o espaço entre os artigos e a palavra seguinte, como no caso foi `a |the |an `.
+
+- `.trim()` remove espaços em branco no início e no fim das strings.
+
+- Como o nome da atividade diz, foi utilizado `.sort()` para ordenar os elementos do array, e mesmo se tratando de strings, a ordenação pode ser realizada com a comparação `a > b`.
+
+- Quando um array é convertido em string, o separador de valores(,) é convertido em string também, então utilizamos `.join('')` para remover o separador.
