@@ -240,3 +240,13 @@ O mesmo foi utilizado na declaração das variáveis *x* e *y* que receberam os 
 - Como o nome da atividade diz, foi utilizado `.sort()` para ordenar os elementos do array, e mesmo se tratando de strings, a ordenação pode ser realizada com a comparação `a > b`.
 
 - Quando um array é convertido em string, o separador de valores(,) é convertido em string também, então utilizamos `.join('')` para remover o separador.
+
+##Dia 18 - Tally String Times with Reduce
+
+- Métodos como `map()` podem não funcionar em arrays de elementos da DOM, por isso, utilizam-se __spreads__`[...]` ou o método `Array.from()` no document.querySelectorAll. __ex:__ `[... document.querySelectorAll('a')]`
+
+- O array foi modelado 2x com `.map()` para que pudesse chegar aos valores separados de minuto e segundo.
+
+- Foi utilizado `reduce()` para obter a quantidade total de segundos.
+
+- Utilizou-se o __mod__ `%` para calcular os segundos restantes de cada etapa (hora e minuto)
