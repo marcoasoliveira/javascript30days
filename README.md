@@ -241,7 +241,7 @@ O mesmo foi utilizado na declaração das variáveis *x* e *y* que receberam os 
 
 - Quando um array é convertido em string, o separador de valores(,) é convertido em string também, então utilizamos `.join('')` para remover o separador.
 
-##Dia 18 - Tally String Times with Reduce
+## Dia 18 - Tally String Times with Reduce
 
 - Métodos como `map()` podem não funcionar em arrays de elementos da DOM, por isso, utilizam-se __spreads__`[...]` ou o método `Array.from()` no document.querySelectorAll. __ex:__ `[... document.querySelectorAll('a')]`
 
@@ -249,4 +249,12 @@ O mesmo foi utilizado na declaração das variáveis *x* e *y* que receberam os 
 
 - Foi utilizado `reduce()` para obter a quantidade total de segundos.
 
-- Utilizou-se o __mod__ `%` para calcular os segundos restantes de cada etapa (hora e minuto)
+- Utilizou-se o __mod__ `%` para calcular os segundos restantes de cada etapa (hora e minuto).
+
+## Dia 19 - Unreal Webcam Fun
+
+- Para a utilização do recurso da webcam, é necessário rodar o __node__.
+
+- A função `getVideo()` é a responsável por solicitar o uso da webcam e possui uma promise que espera a resposta da solicitação.
+
+- A função `paintToCanvas()` exibe a imagem capturada na tela.
