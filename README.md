@@ -273,3 +273,4 @@ O mesmo foi utilizado na declaração das variáveis *x* e *y* que receberam os 
 - A cada pausa na fala, uma nova linha é iniciada.
 
 - Podemos também subistiuir texto por outra coisa através do atributo `.replace`
+
