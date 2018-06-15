@@ -258,3 +258,18 @@ O mesmo foi utilizado na declaração das variáveis *x* e *y* que receberam os 
 - A função `getVideo()` é a responsável por solicitar o uso da webcam e possui uma promise que espera a resposta da solicitação.
 
 - A função `paintToCanvas()` exibe a imagem capturada na tela.
+
+
+## Dia 20 - Reconhecimento de texto por voz
+
+- O código está idêntico ao do vídeo, mas por algum motivo o Firefox não reconhece o `SpeechRecognition`.
+
+- Funcionou perfeitamente no Chrome
+
+- `SpeechRecognition` é uma interface da API Web Speech que faz o reconhecimento da fala.
+
+- Podemos definir qual o __idioma__ que deverá ser reconhecido, através do atributo `.lang`, conforme utilizado em `recognition.lang = 'pt-BR'`.
+
+- A cada pausa na fala, uma nova linha é iniciada.
+
+- Podemos também subistiuir texto por outra coisa através do atributo `.replace`
