@@ -274,3 +274,15 @@ O mesmo foi utilizado na declaração das variáveis *x* e *y* que receberam os 
 
 - Podemos também subistiuir texto por outra coisa através do atributo `.replace`
 
+## Dia 21 - Geolocation based Speedometer and Compass
+
+Este tópico será refeito devido problema na execução.
+
+## Dia 22 - Follow Along Links
+
+Adiciona um "marcador" que aparece quando o mouse é posicionado sobre um link.
+
+- O método `.getBoundingClientRect()` retorna a posição e o tamanho do elemento na tela (viewport)
+
+- A rolagem da tela deve ser compensada, pois a posição do elemento é definida pelas coordenadas iniciais da tela, por isso utilizou-se `linkCoords.left + window.scrollX` para compensar o deslocamento horizontal e `linkCoords.top + window.scrollY` para o vertical.
+
