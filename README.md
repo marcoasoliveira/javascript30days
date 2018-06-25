@@ -286,3 +286,8 @@ Adiciona um "marcador" que aparece quando o mouse é posicionado sobre um link.
 
 - A rolagem da tela deve ser compensada, pois a posição do elemento é definida pelas coordenadas iniciais da tela, por isso utilizou-se `linkCoords.left + window.scrollX` para compensar o deslocamento horizontal e `linkCoords.top + window.scrollY` para o vertical.
 
+## Dia 23 - Sintetização de voz e leitura de textos
+
+- `.SpeechSynthesisUtterance()` é o método responsável por carregar a lista de linguagens suportadas.
+
+- Funcionou apenas no google chrome. No firefox, não reconhecia o método.
